@@ -47,10 +47,10 @@ section.department h2 {
 .blocks {
     position: relative;
     display: block;
-    width: calc(100% - 15px);
+    width: 100%;
     /* float: right; */
     /* padding: 5px; */
-    margin: 0px 0 150px 0;
+    margin: 0px 0 50px 0;
     z-index: 10;
 }
 
@@ -375,7 +375,7 @@ p.readmore {
 }
 
 section.inner-section {
-    margin: 0 auto 75px;
+    margin: 0 auto 45px;
     width: 1220px;
     position: relative;
     height: auto;
@@ -548,3 +548,15 @@ div#animation_container {
 }
 
 .slide.project-img.show {opacity:1}
+
+div#map {
+    height: 60vh;
+    position: relative;
+    left: 0;
+    margin: 0;
+    margin-left: -11px;
+}
+
+.blocks.members.cards.request {
+    line-height: 25px;
+}

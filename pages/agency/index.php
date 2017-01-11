@@ -15,63 +15,60 @@
     <script src="../../js/perfect-scrollbar.min.js" charset="utf-8"></script>
     <script src="../../js/agency/agencyinit.js" charset="utf-8"></script>
     <script src="../../js/menu.js" charset="utf-8"></script>
-    <script>
-        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAC-vPlNvcRpNNKNLdaBizpNvWXqQUXk60"></script>
+
+    <script type="text/javascript">
+        // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
+
         function init() {
-            canvas = document.getElementById("canvas");
-            anim_container = document.getElementById("animation_container");
-            dom_overlay_container = document.getElementById("dom_overlay_container");
-            handleComplete();
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 5,
+
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(32.3496819,49.1803175),
+
+                // How you would like to style the map.
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"simplified"},{"color":"#e94f3f"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"on"},{"gamma":"0.50"},{"hue":"#ff4a00"},{"lightness":"-79"},{"saturation":"-86"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"hue":"#ff1700"}]},{"featureType":"landscape.natural.landcover","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#ff0000"}]},{"featureType":"poi","elementType":"all","stylers":[{"color":"#e74231"},{"visibility":"off"}]},{"featureType":"poi","elementType":"labels.text.stroke","stylers":[{"color":"#4d6447"},{"visibility":"off"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"color":"#f0ce41"},{"visibility":"off"}]},{"featureType":"poi.park","elementType":"all","stylers":[{"color":"#363f42"}]},{"featureType":"road","elementType":"all","stylers":[{"color":"#231f20"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#6c5e53"}]},{"featureType":"transit","elementType":"all","stylers":[{"color":"#313639"},{"visibility":"off"}]},{"featureType":"transit","elementType":"labels.text","stylers":[{"hue":"#ff0000"}]},{"featureType":"transit","elementType":"labels.text.fill","stylers":[{"visibility":"simplified"},{"hue":"#ff0000"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#0e171d"}]}]
+            };
+
+            // Get the HTML DOM element that will contain your map
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('map');
+
+            // Create the Google Map using our element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+
+            // Let's also add a marker while we're at it
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(32.3496819,49.1803175),
+                map: map,
+                icon: "../../img/placeholder.png",
+                title: 'Snazzy!'
+            });
+            var marker1 = new google.maps.Marker({
+                position: new google.maps.LatLng(35.2496849,49.1803175),
+                map: map,
+                icon: "../../img/placeholder.png",
+                title: 'hi!'
+            });
+            var marker1 = new google.maps.Marker({
+                position: new google.maps.LatLng(35.2496849,47.1803175),
+                map: map,
+                icon: "../../img/placeholder.png",
+                title: 'hi!'
+            });
+            var marker1 = new google.maps.Marker({
+                position: new google.maps.LatLng(30.2496849,55.1803175),
+                map: map,
+                icon: "../../img/placeholder.png",
+                title: 'hi!'
+            });
         }
-        function handleComplete() {
-            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
-            exportRoot = new lib.logo();
-            stage = new createjs.Stage(canvas);
-            stage.addChild(exportRoot);
-            //Registers the "tick" event listener.
-            fnStartAnimation = function() {
-                createjs.Ticker.setFPS(lib.properties.fps);
-                createjs.Ticker.addEventListener("tick", stage);
-            }
-            //Code to support hidpi screens and responsive scaling.
-            function makeResponsive(isResp, respDim, isScale, scaleType) {
-                var lastW, lastH, lastS=1;
-                window.addEventListener('resize', resizeCanvas);
-                resizeCanvas();
-                function resizeCanvas() {
-                    var w = lib.properties.width, h = lib.properties.height;
-                    var iw = window.innerWidth, ih=window.innerHeight;
-                    var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;
-                    if(isResp) {
-                        if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {
-                            sRatio = lastS;
-                        }
-                        else if(!isScale) {
-                            if(iw<w || ih<h)
-                                sRatio = Math.min(xRatio, yRatio);
-                        }
-                        else if(scaleType==1) {
-                            sRatio = Math.min(xRatio, yRatio);
-                        }
-                        else if(scaleType==2) {
-                            sRatio = Math.max(xRatio, yRatio);
-                        }
-                    }
-                    canvas.width = w*pRatio*sRatio;
-                    canvas.height = h*pRatio*sRatio;
-                    canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';
-                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
-                    stage.scaleX = pRatio*sRatio;
-                    stage.scaleY = pRatio*sRatio;
-                    lastW = iw; lastH = ih; lastS = sRatio;
-                }
-            }
-            makeResponsive(false,'both',false,1);
-            fnStartAnimation();
-        }
-        $(document).ready(function () {
-            init();
-        })
     </script>
 </head>
 <body>
@@ -152,53 +149,57 @@
     <ul>
         <a href="#">معرفی دپارتمان</a>
         <a href="#">چارت سازمانی</a>
-        <a class="inner-head-selected" href="#">تقدیر نامه ها</a>
+        <a class="inner-head-selected" href="#">نمایدنگی ها</a>
         <a class="li-header-vie" href="#">گالری تصاویر</a></li>
         <a href="#">گواهی نامه ها</a>
     </ul>
 </section>-->
 <section class="department section main group">
     <section class=" inner-section dep-inner">
-        <div class="blocks members cards ">
-
+        <div class="blocks map">
+            <div id="map"></div>
         </div>
         <div class="blocks info col span_12_of_12">
-            <div id="animation_container" style="background-color:transparent; width:200px; height:200px">
-                <canvas id="canvas" width="200" height="200" style="position: absolute; display: block; background-color:transparent;"></canvas>
-                <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:200px; height:200px; position: absolute; left: 0px; top: 0px; display: block;">
-                </div>
-            </div>
+
             <div class="titleblock">
-                <h2>مرکز معماری ایران</h2>
+                <h2>معرفی نمایندگی های مرکز معماری ایران</h2>
             </div>
             <div class="about-tex-img">
 
 
                 <p class="p1">
-                    دون شک اعتلا بخشیدن به کیفیت آنچه به عنوان رویداد معماری ‏پیرامون ما در حال رخداد است نیازمند نهاد
-                    هایی است که به عنوان ‏حلقه ای مبتنی بر دانایی و هماهنگ ما بین مراکز دانشگاهی و جریان ‏ساخت و ساز
-                    ایفای نقش می‌کنند‎.‎ ‎"‎مرکز معماری ایران" ‎از بدو تاسیس، وظیفه‌ی خود دانسته است ‏که بتواند همگام با
-                    جامه‌ی متخصص در حوزه های آکادمیک، مدیریت ‏و اجرا گوشه‌ای از این خلاء بزرگ را جبران نماید و با در نظر
-                    داشتن ‏اهداف زیر گامی هر چند کوچک در مسیر آبادی و پیشرفت میهن ‏عزیزمان بردارد: ‎
-                    • آموزش دائمی و ارتقاء مستمر متخصصین و علاقمندان حوزه‌ی ‏معماری و ساخت و ساز به منظور کاربست مناسب
-                    دستاوردهای به ‏روز علمی و پژوهشی در جهت بالا بردن شاخص‌های کمی و کیفی ‏فعالیت‌ها
-                    • برقراری ارتباط و تعامل گسترده با اندیشمندان، مجامع ‏علمی، دانشگاه ها و مؤسسات معتبر داخلی و خارجی
-                    و تشکیل ‏کارگروه‌های هم اندیشی به منظور حداکثر همکاری و استفاده از ‏قابلیت ها و دستاوردهای علمی،
-                    عملی و پژوهشی آنها
-                    • ‎ ‎ایجاد و توسعه‌ی پایگاه‌های اطلاعاتی مورد نیاز به منظور تأمین ‏اطلاعات و ارتقای علوم و خدمات
-                    مورد نیاز پژوهشگران، متخصصین و ‏سایر مخاطبان
-                    • جذب نخبگان و مشارکت در ایجاد زمینه‌های مناسب برای ‏اشتغال فارغ التحصیلان و ترغیب روحیه‌ی کارآفرینی
-                    در بین آنها
-                    • ارائه‌ی خدمات فنی و مهندسی معماری و شهرسازی مبتنی بر ‏فرهنگ غنی و معماری اصیل ایرانی با تکیه بر
-                    دانش و تجارب ‏متخصصین داخلی و خارجی و بهره‌گیری از پیشرفته‌ترین ‏دستاوردها و تکنولوژی‌ها به لطف ایزد
-                    منان، پویایی و عملکرد این مرکز در هفت سال اخیر ‏سبب شده است که با داشتن بالغ بر30 هزار عضو متخصص و
-                    ‏برگزاری بیش از 60 سمینار، همایش و مسابقه در شهرها و دانشگاه‌‏های مختلف کشور نظیر دانشگاه علم و
-                    صنعت، دانشگاه هنر ‏اصفهان، دانشگاه یزد، دانشگاه کاشان، دانشگاه زنجان، دانشگاه ‏آزاداسلامی واحدهای
-                    تهران مرکز، واحد تهران جنوب، واحد مشهد، ‏واحد کرمان و ... افتخار همکاری با مجموعه‌های مختلف علمی‌‏،
-                    فرهنگی و اجرایی داخل و خارج از کشور مانند سازمان جهانی ‏یونسکو، فرهنگستان هنر، بنیاد میرمیران،
-                    پژوهشکده فرهنگ هنر و ‏معماری، انجمن مفاخر معماری، انجمن دوستی ایران و فرانسه، خانه‌ی ‏هنرمندان،
 
-                    شهرداری‌های تهران و ... را داشته باشد و مورد تقدیر و ‏حمایت نهادهای ذیربط قرار گیرد‎.‎ ‏ ‏</p>
+                    معرفی:
+                    بخش امور استان ها با هدف ایجاد و اشاعه ی یک جریان مستمر علمی, فرهنگی و اجرایی در معماری و صنعت ساختمان کشور شکل گرفته است.بدیهی است که نیل به چنین چشم اندازی, ایجاد بسترهای مختلفی را در جهت ارتقای سطح دانش و توان اجرایی متخصصان این حوزه را در سراسر کشور می طلبد.
+                    استراتژی:
+                    - فعالیت های کاربردی و در عین حال , کلان نگر و قابل توسعه
+                    - ارتقاء فرهنگ علم جویی و نوآوری
+                    - کمک به برقراری عدالت آموزشی
+                    اهداف:
+                    - برقراری تعامل با کلیه ی ارگان ها،نهاد ها،مراکز آموزشی ، پژوهشی و اجرایی در هر استان.
+                    - آموزش و پژوهش در زمینه های مختلف معماری و شهرسازی و نیز تخصصها و رشته های مرتبط در جهت ارتقای توان علمی و عملی پژوهشگران و متخصصان.
+                    - ترویج نگرشی جدید در خصوص انجام پروژه های مطالعاتی و اجرایی.
+                    - ایجاد بستر مناسب جهت استفاده از توان تخصصی و فنی فارغ التحصیلان و دانشجویان علاقمند.
+                    خدمات قابل ارائه در استان ها:
+                    - انعقاد قرارداد در پروژه های مختلف مطالعاتی و اجرایی در سراسر کشور با همکاری مشاورین و متخصصین داخلی و خارجی.
+                    - برگزاری دوره های آموزشی تکمیلی و کاربردی ویژه اساتید دانشگاهی،دانشجویان،مدیران و متخصصین سازمان ها.
+                    - برگزاری سمینار,همایش و نشست های علمی
+                    - برگزاری مسابقات مختلف معماری
+                    - بورسیه دانشجویان مستعد و نخبه
+                    - حمایت از انجمن ها و کانون های معماری
+                    روند اخذ نمایندگی از مرکز معماری ایران:
+                    (ویژه مراکز آموزشی و پژوهشی غیر دولتی)
+                    - ارسال رزومه کامل از مجموعه و متخصصین شاغل
+                    - ارسال پروپزال نحوه ی همکاری
+                    - شرکت در مصاحبه ی حضوری
+                    - انعقاد تفاهم نامه
+                    تلفن های تماس:
+                    1444 8873 021
+                    3644 8873 021
+                    داخلی 124
+
+
+                </p>
 
                 <div class="about-img">
                     <div>
@@ -212,13 +213,13 @@
                 </div>
             </div>
         </div>
-        <h2>تقدیر نامه ها</h2>
+        <h2>نمایدنگی ها</h2>
         <div class="blocks members cards ">
 
             <a href="#" class="boxes">
                 <img src="../../img/card1.jpg" alt="" />
                 <h3>
-                        تقدیر نامه
+                       نمایندگی
                 </h3>
                 <p>
                     توضیحات
@@ -227,7 +228,7 @@
             <a href="#" class="boxes">
                 <img src="../../img/card1.jpg" alt="" />
                 <h3>
-                    تقدیر نامه
+                   نمایندگی
                 </h3>
                 <p>
                     توضیحات
@@ -236,7 +237,7 @@
             <a href="#" class="boxes">
                 <img src="../../img/card1.jpg" alt="" />
                 <h3>
-                    تقدیر نامه
+                   نمایندگی
                 </h3>
                 <p>
                     توضیحات
@@ -245,7 +246,7 @@
             <a href="#" class="boxes">
                 <img src="../../img/card1.jpg" alt="" />
                 <h3>
-                    تقدیر نامه
+                   نمایندگی
                 </h3>
                 <p>
                     توضیحات
@@ -254,7 +255,7 @@
             <a href="#" class="boxes">
                 <img src="../../img/card1.jpg" alt="" />
                 <h3>
-                    تقدیر نامه
+                   نمایندگی
                 </h3>
                 <p>
                     توضیحات
@@ -263,115 +264,24 @@
             <a href="#" class="boxes">
                 <img src="../../img/card1.jpg" alt="" />
                 <h3>
-                    تقدیر نامه
+                   نمایندگی
                 </h3>
                 <p>
                     توضیحات
                 </p>
             </a>
         </div>
-        <h2>چارت سازمانی</h2>
-        <div class="blocks members cards ">
-        </div>
-        <h2>گالری تصاویر</h2>
-        <div class="blocks slider">
+        <h2>اعطای نمایندگی</h2>
+        <div class="blocks members cards request">
+            مرکز معماری ایران در نظر دارد در راستای گسترش فعالیت های علمی و فرهنگی خود در سراسر کشور , همکارانی را به عنوان نماینده و یا عاملیت انحصاری در شهرهای مختلف برگزیند.
+            علاقمندان به این موضوع می توانند در استان های فاقد نمایندگی با دفتر مرکز معماری ایران - بخش استان ها تماس حاصل فرمایند.
+            تلفنهای تماس:
+            7820 8873 021
+            1444 8873 021
+            3644 8873 021
+            داخلی :124
+            <input type="submit" value="فرم درخواست">
 
-            <div class="slides">
-                <div class="slide project-img show">
-                    <img src="../../img/card1.jpg">
-                </div>
-                <div class="slide project-img">
-                    <img src="../../img/card2.jpg">
-                </div>
-                <div class="slide project-img">
-                    <img src="../../img/card3.jpg">
-                </div>
-                <div class="slide project-img">
-                    <img src="../../img/card1.jpg">
-                </div>
-                <div class="slide project-img">
-                    <img src="../../img/card2.jpg">
-                </div>
-                <div class="slide project-img">
-                    <img src="../../img/card3.jpg">
-                </div>
-            </div>
-            <div class="gallery-control">
-                <div class="project-arrow prev">
-                    <img src="../../img/right.svg" alt="">
-                </div>
-                <div class="arrow fullscreen">
-                    <img src="../../img/fullscreen.svg" alt="">
-                    <img src="../../img/close.svg" alt="">
-                </div>
-                <div class="arrow slideshow">
-                    <img src="../../img/pause.svg" alt="">
-                    <img src="../../img/play.svg" alt="">
-                </div>
-                <div class="project-arrow next">
-                    <img src="../../img/left.svg" alt="">
-                </div>
-
-            </div>
-
-        </div>
-        <h2>گواهی نامه ها</h2>
-        <div class="blocks members cards ">
-
-            <a href="#" class="boxes">
-                <img src="../../img/card1.jpg" alt="" />
-                <h3>
-                    تقدیر نامه
-                </h3>
-                <p>
-                    توضیحات
-                </p>
-            </a>
-            <a href="#" class="boxes">
-                <img src="../../img/card1.jpg" alt="" />
-                <h3>
-                    تقدیر نامه
-                </h3>
-                <p>
-                    توضیحات
-                </p>
-            </a>
-            <a href="#" class="boxes">
-                <img src="../../img/card1.jpg" alt="" />
-                <h3>
-                    تقدیر نامه
-                </h3>
-                <p>
-                    توضیحات
-                </p>
-            </a>
-            <a href="#" class="boxes">
-                <img src="../../img/card1.jpg" alt="" />
-                <h3>
-                    تقدیر نامه
-                </h3>
-                <p>
-                    توضیحات
-                </p>
-            </a>
-            <a href="#" class="boxes">
-                <img src="../../img/card1.jpg" alt="" />
-                <h3>
-                    تقدیر نامه
-                </h3>
-                <p>
-                    توضیحات
-                </p>
-            </a>
-            <a href="#" class="boxes">
-                <img src="../../img/card1.jpg" alt="" />
-                <h3>
-                    تقدیر نامه
-                </h3>
-                <p>
-                    توضیحات
-                </p>
-            </a>
         </div>
 
 
