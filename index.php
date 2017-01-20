@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="css/master.css" media="screen" title="grid" charset="utf-8">
     <script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
     <script src="js/jquery.touchSwipe.min.js" charset="utf-8"></script>
+      <script src="js/reval.js" charset="utf-8"></script>
     <script src="js/init.js" charset="utf-8"></script>
   </head>
   <body>
-      <div class="identity-logo">
+      <div class="identity-logo a-w-d">
             <a href="#" class="logo-mask"><img class="logo" src="img/logo.png" alt="" /></a>
             <div class="menu-spin">
               <div class="menu-icon">
@@ -88,8 +89,11 @@
         </div>
       </div>
       <section class="home">
+          <section class="home-header a-w-d">
+              <img src="img/logowith.png">
+          </section>
         <!-- Swiper -->
-            <div class="swiper-container">
+            <div class="swiper-container a-w-d">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <video width="100%" autoplay loop class="slidevideo">
@@ -213,5 +217,8 @@
           Your browser does not support HTML5 video.
         </video>
       </div>
+      <script type="text/javascript">
+          window.sr = ScrollReveal().reveal('.a-w-d', {duration: 1000, reset: true}, 100);
+      </script>
   </body>
 </html>

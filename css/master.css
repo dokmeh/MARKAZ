@@ -233,7 +233,7 @@ section.home {
 }
 
 .swiper-container-1, .swiper-container {
-    margin-top: 30vh;
+    margin-top: 0;
     height: 40vh;
     transition: 1s ease all;
     z-index: 3;
@@ -357,6 +357,7 @@ nav a, .submenu a {
     padding: 10px;
     cursor: pointer;
     z-index: 1;
+    display: none;
 }
 
 .newsbt, .homeslidebt {
@@ -375,6 +376,7 @@ nav a, .submenu a {
     height: 60px;
     -webkit-transition: 500ms ease all;
     transition: 500ms ease all;
+    display: none;
 }
 
 .newsbt:hover, .homeslidebt:hover {
@@ -451,6 +453,7 @@ section.home.home-news .swiper-container-1 {
     .bgvideo video {
         width: auto;
         height: 100%;
+        display: none;
     }
 }
 
@@ -868,4 +871,16 @@ section.interior-header ul a:hover:before,a.inner-head-selected:before {
 }
 
 
-{}
+
+section.home-header {
+    width: 100%;
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+section.home-header img{
+    height:60px;
+    filter: inver(100%);
+    -webkit-filter: invert();
+}
