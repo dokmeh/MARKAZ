@@ -89,40 +89,26 @@
 </div>
 <div class="navhandl">
     <nav>
-        <span class="line"></span>
-        <ul>
+
             <div class="navup">
                 <div class="navupinner">
-                    <li><a href="#" class="hovereffect">خانه</a></li>
-                    <li><a href="#" class="hovereffect">دپارتمان ها</a></li>
-                    <li class="submenu">
-                        <p>نمایندگی ها</p>
-                        <div class="innermenu">
-                            <div>
-                                <a href="#">دپارتمان</a>
-                                <a href="#">دپارتمان</a>
-                                <a href="#">دپارتمان</a>
-                                <a href="#">دپارتمان</a>
-                                <a href="#">دپارتمان</a>
-                                <a href="#">دپارتمان</a>
-                                <a href="#">دپارتمان</a>
-                                <a href="#">دپارتمان</a>
-                                <a href="#">دپارتمان</a>
-                            </div>
-                            <span class="close-bt">⨯</span>
-                        </div>
-                    </li>
-                    <li><a href="#" class="hovereffect">خدمات مرکز</a></li>
+                    <ul class="ul-left">
+                        <li><a href="#" class="hovereffect">وب سایت همپا</a></li>
+                        <li><a href="#" class="hovereffect">نمایندگی ها</a></li>
+                        <li><a href="#" class="hovereffect">نمایندگی ها</a></li>
+                        <li><a href="#" class="hovereffect">خدمات مرکز</a></li>
+
+
+                    </ul>
+                    <ul class="ul-left">
+                        <li><a href="#" class="hovereffect">ثبت نام آنلاین</a></li>
+                        <li><a href="#" class="hovereffect">سامانه اشتغال</a></li>
+                        <li><a href="#" class="hovereffect">درباره مرکز معماری</a></li>
+                        <li><a href="#" class="hovereffect">تماس با ما</a></li>
+                    </ul>
+
                 </div>
             </div>
-            <div class="navdown">
-                <div class="navdowninner">
-                    <li><a href="#" class="hovereffect"> مطالب علمی</a></li>
-                    <li><a href="#" class="hovereffect">درباره ما</a></li>
-                    <li><a href="#" class="hovereffect">تماس با ما</a></li>
-                </div>
-            </div>
-        </ul>
     </nav>
 </div>
 <div class="mobilenavhandl">
