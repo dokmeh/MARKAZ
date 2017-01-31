@@ -87,96 +87,240 @@
       </div>
       <section class="home">
           <section class="home-header a-w-d">
-              <img src="img/logowith.png">
+
+              <div class="bgvideo bgvideo-hide">
+                  <video autoplay loop>
+                      <source src="img/vid.mp4" type="video/mp4">
+                      Your browser does not support HTML5 video.
+                  </video>
+              </div>
+              <img src="img/logo-home.png">
+              <div class="arrow-d">
+                  <p class="h-txt-d">بیشتر</p>
+                  <img src="img/h-arrow-d.svg">
+              </div>
+          </section>
+          <section class="home-body blocks members cards">
+              <a href="#" class="boxes">
+                  <div class="big-tile"><img src="img/card1.jpg" alt=""></div>
+                  <div class="bigbox-text">
+                      <h3>
+                         موضوع
+                      </h3>
+                      <p>
+                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                      </p>
+                  </div>
+
+              </a>
+              <div class="home-thumbs">
+              <a href="#" class="boxes-small">
+                  <img src="img/card1-c.jpg" alt="">
+                  <div class="bigbox-text">
+                      <h3>
+                         موضوع
+                      </h3>
+                      <p>
+                          زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                      </p>
+                  </div>
+
+              </a>
+              <a href="#" class="boxes-small">
+                  <img src="img/card1-c.jpg" alt="">
+                  <div class="bigbox-text">
+                      <h3>
+                         موضوع
+                      </h3>
+                      <p>
+                          زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                      </p>
+                  </div>
+
+              </a>
+              <a href="#" class="boxes-small">
+                  <img src="img/card1-c.jpg" alt="">
+                  <div class="bigbox-text">
+                      <h3>
+                         موضوع
+                      </h3>
+                      <p>
+                          زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                      </p>
+                  </div>
+
+              </a>
+              <a href="#" class="boxes-small">
+                  <img src="img/card1-c.jpg" alt="">
+                  <div class="bigbox-text">
+                      <h3>
+                         موضوع
+                      </h3>
+                      <p>
+                          زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                      </p>
+                  </div>
+
+              </a>
+                  <a href="#" class="boxes-small">
+                      <img src="img/card1-c.jpg" alt="">
+                      <div class="bigbox-text">
+                          <h3>
+                              موضوع
+                          </h3>
+                          <p>
+                              زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                          </p>
+                      </div>
+
+                  </a>
+                  <a href="#" class="boxes-small">
+                      <img src="img/card1-c.jpg" alt="">
+                      <div class="bigbox-text">
+                          <h3>
+                              موضوع
+                          </h3>
+                          <p>
+                              زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                          </p>
+                      </div>
+
+                  </a>
+                  <a href="#" class="boxes-small">
+                      <img src="img/card1-c.jpg" alt="">
+                      <div class="bigbox-text">
+                          <h3>
+                              موضوع
+                          </h3>
+                          <p>
+                              زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                          </p>
+                      </div>
+
+                  </a>
+                  <a href="#" class="boxes-small">
+                      <img src="img/card1-c.jpg" alt="">
+                      <div class="bigbox-text">
+                          <h3>
+                              موضوع
+                          </h3>
+                          <p>
+                              زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                          </p>
+                      </div>
+
+                  </a>
+                  <a href="#" class="boxes-small">
+                      <img src="img/card1-c.jpg" alt="">
+                      <div class="bigbox-text">
+                          <h3>
+                              موضوع
+                          </h3>
+                          <p>
+                              زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                          </p>
+                      </div>
+
+                  </a>
+              </div>
+
+
+
+
+
+
+
+
+
           </section>
         <!-- Swiper -->
-            <div class="swiper-container a-w-d">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <video width="100%" autoplay loop class="slidevideo">
-                        <source src="img/vid.mp4" type="video/mp4">
-                        Your browser does not support HTML5 video.
-                      </video>
-                    </div>
-                    <div class="swiper-slide"><img src="img/s1.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="img/s2.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="img/s3.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="img/s4.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="img/s5.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="img/s1.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="img/s2.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="img/s3.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="img/s2.jpg" alt="" /></div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
-            <div class="swiper-container-1">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="img/s1.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="img/s2.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="img/s3.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="img/s4.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="img/s5.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="img/s1.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="img/s2.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="img/s3.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="img/s2.jpg" alt="" /></div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination1"></div>
-            </div>
+<!--            <div class="swiper-container a-w-d">-->
+<!--                <div class="swiper-wrapper">-->
+<!--                    <div class="swiper-slide">-->
+<!--                      <video width="100%" autoplay loop class="slidevideo">-->
+<!--                        <source src="img/vid.mp4" type="video/mp4">-->
+<!--                        Your browser does not support HTML5 video.-->
+<!--                      </video>-->
+<!--                    </div>-->
+<!--                    <div class="swiper-slide"><img src="img/s1.jpg" alt="" /></div>-->
+<!--                    <div class="swiper-slide"><img src="img/s2.jpg" alt="" /></div>-->
+<!--                    <div class="swiper-slide"><img src="img/s3.jpg" alt="" /></div>-->
+<!--                    <div class="swiper-slide"><img src="img/s4.jpg" alt="" /></div>-->
+<!--                    <div class="swiper-slide"><img src="img/s5.jpg" alt="" /></div>-->
+<!--                    <div class="swiper-slide"><img src="img/s1.jpg" alt="" /></div>-->
+<!--                    <div class="swiper-slide"><img src="img/s2.jpg" alt="" /></div>-->
+<!--                    <div class="swiper-slide"><img src="img/s3.jpg" alt="" /></div>-->
+<!--                    <div class="swiper-slide"><img src="img/s2.jpg" alt="" /></div>-->
+<!--                </div>-->
+<!--                <!-- Add Pagination -->
+<!--                <div class="swiper-pagination"></div>-->
+<!--            </div>-->
+<!--            <div class="swiper-container-1">-->
+<!--                <div class="swiper-wrapper">-->
+<!--                    <div class="swiper-slide"><img src="img/s1.jpg" alt="" /></div>-->
+<!--                    <div class="swiper-slide"><img src="img/s2.jpg" alt="" /></div>-->
+<!--                    <div class="swiper-slide"><img src="img/s3.jpg" alt="" /></div>-->
+<!--                    <div class="swiper-slide"><img src="img/s4.jpg" alt="" /></div>-->
+<!--                    <div class="swiper-slide"><img src="img/s5.jpg" alt="" /></div>-->
+<!--                    <div class="swiper-slide"><img src="img/s1.jpg" alt="" /></div>-->
+<!--                    <div class="swiper-slide"><img src="img/s2.jpg" alt="" /></div>-->
+<!--                    <div class="swiper-slide"><img src="img/s3.jpg" alt="" /></div>-->
+<!--                    <div class="swiper-slide"><img src="img/s2.jpg" alt="" /></div>-->
+<!--                </div>-->
+<!--                <!-- Add Pagination -->
+<!--                <div class="swiper-pagination1"></div>-->
+<!--            </div>-->
             <!-- Swiper JS -->
-            <script src="js/swiper.jquery.min.js"></script>
+<!--            <script src="js/swiper.jquery.min.js"></script>-->
 
             <!-- Initialize Swiper -->
             <script>
-                var input = 0;
-                var swiper = new Swiper('.swiper-container', {
-                    pagination: '.swiper-pagination',
-                    slidesPerView: 'auto',
-                    paginationClickable: true,
-                    spaceBetween: 2,
-                    mousewheelControl: true,
-                    autoplayStopOnLast: false,
-                    loop: true,
-                    onSlideChangeStart: function (swiper) {
-                        // console.log('slide change start - before');
-                        // console.log(swiper);
-                        console.log(swiper.activeIndex);
-                        bg(swiper.activeIndex);
-                        //before Event use it for your purpose
-                    }
-                });
-            setTimeout(function() {
-                  var swiper = new Swiper('.swiper-container-1', {
-                      pagination: '.swiper-pagination1',
-                      slidesPerView: 'auto',
-                      paginationClickable: true,
-                      spaceBetween: 2,
-                      mousewheelControl: true,
-                      autoplayStopOnLast: false,
-                      loop: true,
-                      onSlideChangeStart: function (swiper) {
-                          console.log('slide change start - before');
-                          console.log(swiper);
-                          console.log(swiper.activeIndex);
-                          //before Event use it for your purpose
-                      },
-                      onSlideChangeEnd: function (swiper) {
-                          console.log('slide change end - after');
-                          console.log(swiper);
-                          console.log(swiper.activeIndex);
-                          //after Event use it for your purpose
-                          if (swiper.activeIndex == 1) {
-                              //First Slide is active
-                              console.log('First slide active')
-                          }
-
-                      }
-                  });
-
-            },1000);
+//                var input = 0;
+//                var swiper = new Swiper('.swiper-container', {
+//                    pagination: '.swiper-pagination',
+//                    slidesPerView: 'auto',
+//                    paginationClickable: true,
+//                    spaceBetween: 2,
+//                    mousewheelControl: true,
+//                    autoplayStopOnLast: false,
+//                    loop: true,
+//                    onSlideChangeStart: function (swiper) {
+//                        // console.log('slide change start - before');
+//                        // console.log(swiper);
+//                        console.log(swiper.activeIndex);
+//                        bg(swiper.activeIndex);
+//                        //before Event use it for your purpose
+//                    }
+//                });
+//            setTimeout(function() {
+//                  var swiper = new Swiper('.swiper-container-1', {
+//                      pagination: '.swiper-pagination1',
+//                      slidesPerView: 'auto',
+//                      paginationClickable: true,
+//                      spaceBetween: 2,
+//                      mousewheelControl: true,
+//                      autoplayStopOnLast: false,
+//                      loop: true,
+//                      onSlideChangeStart: function (swiper) {
+//                          console.log('slide change start - before');
+//                          console.log(swiper);
+//                          console.log(swiper.activeIndex);
+//                          //before Event use it for your purpose
+//                      },
+//                      onSlideChangeEnd: function (swiper) {
+//                          console.log('slide change end - after');
+//                          console.log(swiper);
+//                          console.log(swiper.activeIndex);
+//                          //after Event use it for your purpose
+//                          if (swiper.activeIndex == 1) {
+//                              //First Slide is active
+//                              console.log('First slide active')
+//                          }
+//
+//                      }
+//                  });
+//
+//            },1000);
 
            function bg(newinput){
              if(newinput > input){
@@ -208,12 +352,7 @@
       <div class="bg">
 
       </div>
-      <div class="bgvideo bgvideo-hide">
-        <video autoplay loop>
-          <source src="img/vid.mp4" type="video/mp4">
-          Your browser does not support HTML5 video.
-        </video>
-      </div>
+
       <script type="text/javascript">
           window.sr = ScrollReveal().reveal('.a-w-d', {duration: 1000, reset: true}, 100);
       </script>
