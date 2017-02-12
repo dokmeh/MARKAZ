@@ -29,37 +29,44 @@
                 <a href="http://instagram.com/iranianarchitecturecenter" target="_blank"><img src="img/instagram.svg" alt="" /></a>
             </div>
             <nav>
+
                 <ul>
-                    <li><a href="#">معماری - معماری داخلی</a></li>
-                    <li><a href="#">معماری پابدار</a> </li>
-                    <li><a href="#">معماری دیجیتال(پارا متریک)</a> </li>
-                    <li><a href="#">نرم افزار</a> </li>
-                    <li><a href="#">حرفه و ساخت</a> </li>
-                    <li><a href="#">AMBA</a> </li>
-                    <li><a href="#">شهر سازی</a> </li>
+                    <li>
+                        <h2>مرکز آموزش</h2>
+                        <a href="#" class="hovereffect">نمایندگی ها<span style="background: transparent"></span></a>
+                        <a href="#" class="hovereffect">خدمات مرکز<span style="background: transparent"></span></a>
+                        <a href="#" class="hovereffect">ثبت نام آنلاین<span style="background: transparent"></span></a>
+                        <a href="#" class="hovereffect">سامانه اشتغال<span style="background: transparent"></span></a>
+
+                    </li>
+                    <span class="li-line"></span>
+                    <li>
+                        <h2>دپارتمان ها</h2>
+                        <a href="#" class="hovereffect">معماری - معماری داخلی <span style="background: #871000"></span></a>
+                        <a href="#" class="hovereffect">معماری پابدار <span style="background: #fffc2e"></span></a>
+                        <a href="#" class="hovereffect">معماری دیجیتال(پارا متریک) <span style="background: #8400d2"></span></a>
+                        <a href="#" class="hovereffect">نرم افزار <span style="background: #eedf4d"></span></a>
+                        <a href="#" class="hovereffect">حرفه و ساخت <span style="background: #b96581"></span></a>
+                        <a href="#" class="hovereffect">AMBA <span style="background: #534483"></span></a>
+                        <a href="#" class="hovereffect">شهر سازی <span style="background: #24c970"></span></a>
+                    </li>
+                    <span class="li-line"></span>
+                    <li>
+                        <h2>ویژه ها</h2>
+                        <a href="#" class="hovereffect">وب سایت همپا <span style="background: #888"></span></a>
+                        <a href="#" class="hovereffect">درباره مرکز معماری <span style="background: #888"></span></a>
+                        <a href="#" class="hovereffect">تماس با ما <span style="background: #888"></span></a>
+                    </li>
+
+
+
                 </ul>
             </nav>
     	</div>
       <div class="navhandl">
           <nav>
               <div class="navup">
-                  <div class="navupinner">
-                      <ul class="ul-left">
-                          <li><a href="#" class="hovereffect">وب سایت همپا</a></li>
-                          <li><a href="#" class="hovereffect">نمایندگی ها</a></li>
-                          <li><a href="#" class="hovereffect">نمایندگی ها</a></li>
-                          <li><a href="#" class="hovereffect">خدمات مرکز</a></li>
 
-
-                      </ul>
-                      <ul class="ul-left">
-                          <li><a href="#" class="hovereffect">ثبت نام آنلاین</a></li>
-                          <li><a href="#" class="hovereffect">سامانه اشتغال</a></li>
-                          <li><a href="#" class="hovereffect">درباره مرکز معماری</a></li>
-                          <li><a href="#" class="hovereffect">تماس با ما</a></li>
-                      </ul>
-
-                  </div>
               </div>
           </nav>
       </div>
@@ -223,119 +230,7 @@
 
                   </a>
               </div>
-
-
-
-
-
-
-
-
-
           </section>
-        <!-- Swiper -->
-<!--            <div class="swiper-container a-w-d">-->
-<!--                <div class="swiper-wrapper">-->
-<!--                    <div class="swiper-slide">-->
-<!--                      <video width="100%" autoplay loop class="slidevideo">-->
-<!--                        <source src="img/vid.mp4" type="video/mp4">-->
-<!--                        Your browser does not support HTML5 video.-->
-<!--                      </video>-->
-<!--                    </div>-->
-<!--                    <div class="swiper-slide"><img src="img/s1.jpg" alt="" /></div>-->
-<!--                    <div class="swiper-slide"><img src="img/s2.jpg" alt="" /></div>-->
-<!--                    <div class="swiper-slide"><img src="img/s3.jpg" alt="" /></div>-->
-<!--                    <div class="swiper-slide"><img src="img/s4.jpg" alt="" /></div>-->
-<!--                    <div class="swiper-slide"><img src="img/s5.jpg" alt="" /></div>-->
-<!--                    <div class="swiper-slide"><img src="img/s1.jpg" alt="" /></div>-->
-<!--                    <div class="swiper-slide"><img src="img/s2.jpg" alt="" /></div>-->
-<!--                    <div class="swiper-slide"><img src="img/s3.jpg" alt="" /></div>-->
-<!--                    <div class="swiper-slide"><img src="img/s2.jpg" alt="" /></div>-->
-<!--                </div>-->
-<!--                <!-- Add Pagination -->
-<!--                <div class="swiper-pagination"></div>-->
-<!--            </div>-->
-<!--            <div class="swiper-container-1">-->
-<!--                <div class="swiper-wrapper">-->
-<!--                    <div class="swiper-slide"><img src="img/s1.jpg" alt="" /></div>-->
-<!--                    <div class="swiper-slide"><img src="img/s2.jpg" alt="" /></div>-->
-<!--                    <div class="swiper-slide"><img src="img/s3.jpg" alt="" /></div>-->
-<!--                    <div class="swiper-slide"><img src="img/s4.jpg" alt="" /></div>-->
-<!--                    <div class="swiper-slide"><img src="img/s5.jpg" alt="" /></div>-->
-<!--                    <div class="swiper-slide"><img src="img/s1.jpg" alt="" /></div>-->
-<!--                    <div class="swiper-slide"><img src="img/s2.jpg" alt="" /></div>-->
-<!--                    <div class="swiper-slide"><img src="img/s3.jpg" alt="" /></div>-->
-<!--                    <div class="swiper-slide"><img src="img/s2.jpg" alt="" /></div>-->
-<!--                </div>-->
-<!--                <!-- Add Pagination -->
-<!--                <div class="swiper-pagination1"></div>-->
-<!--            </div>-->
-            <!-- Swiper JS -->
-<!--            <script src="js/swiper.jquery.min.js"></script>-->
-
-            <!-- Initialize Swiper -->
-            <script>
-//                var input = 0;
-//                var swiper = new Swiper('.swiper-container', {
-//                    pagination: '.swiper-pagination',
-//                    slidesPerView: 'auto',
-//                    paginationClickable: true,
-//                    spaceBetween: 2,
-//                    mousewheelControl: true,
-//                    autoplayStopOnLast: false,
-//                    loop: true,
-//                    onSlideChangeStart: function (swiper) {
-//                        // console.log('slide change start - before');
-//                        // console.log(swiper);
-//                        console.log(swiper.activeIndex);
-//                        bg(swiper.activeIndex);
-//                        //before Event use it for your purpose
-//                    }
-//                });
-//            setTimeout(function() {
-//                  var swiper = new Swiper('.swiper-container-1', {
-//                      pagination: '.swiper-pagination1',
-//                      slidesPerView: 'auto',
-//                      paginationClickable: true,
-//                      spaceBetween: 2,
-//                      mousewheelControl: true,
-//                      autoplayStopOnLast: false,
-//                      loop: true,
-//                      onSlideChangeStart: function (swiper) {
-//                          console.log('slide change start - before');
-//                          console.log(swiper);
-//                          console.log(swiper.activeIndex);
-//                          //before Event use it for your purpose
-//                      },
-//                      onSlideChangeEnd: function (swiper) {
-//                          console.log('slide change end - after');
-//                          console.log(swiper);
-//                          console.log(swiper.activeIndex);
-//                          //after Event use it for your purpose
-//                          if (swiper.activeIndex == 1) {
-//                              //First Slide is active
-//                              console.log('First slide active')
-//                          }
-//
-//                      }
-//                  });
-//
-//            },1000);
-
-           function bg(newinput){
-             if(newinput > input){
-                $('.bg').animate({left:'-='+25},800);
-             }else{
-                $('.bg').animate({left:'+='+25},800);
-             }
-             if (newinput == 2 || newinput == 12) {
-                $('.bgvideo').addClass('bgvideo-hide');
-             }else{
-               $('.bgvideo').removeClass('bgvideo-hide');
-             }
-             input = newinput;
-           }
-            </script>
             <div class="newsbt">
                 <p>
                   اخبار
@@ -349,10 +244,186 @@
                 </p>
             </div>
       </section>
+
       <div class="bg">
-
+          <canvas id="dots" class="dots-canvas"></canvas>
       </div>
+      <script>
+          var canvas,
+              ctx,
+              mouseX=0,
+              mouseY=0,
+              lastHit;
+          hits = [],
+              elemDist = 30,
+              dotRadius = 1,
+              lineWidth = 1,
+              lineColor = '#444',
+              hitPointColor = lineColor;
 
+
+          var grid = (function(){
+
+              var dots = [];
+
+              function init() {
+
+              }
+
+              function add(i,j,dot) {
+                  if(!dots[i]) {
+                      dots[i] = [];
+                  }
+                  dots[i][j] = dot;
+              }
+
+              function get(i,j) {
+                  return dots[i][j];
+              }
+
+              return {
+                  "gridElementDist": elemDist,
+                  "add" : add,
+                  "get" : get,
+                  "dots": dots
+              }
+          }());
+
+          function Hit(x,y, dot) {
+              this.x = x;
+              this.y = y;
+              this.dot = dot;
+          }
+
+          Hit.prototype.isNeighborOf = function(neighbor) {
+              if(this.y === neighbor.y) {
+
+                  return Math.abs(this.x - neighbor.x) === 1;
+              }
+              if(this.x === neighbor.x) {
+                  return Math.abs(this.y - neighbor.y) === 1;
+              }
+              return false;
+          }
+
+          Hit.prototype.drawConnection = function(neighbor, ctx) {
+              ctx.beginPath();
+              ctx.moveTo(this.dot.x, this.dot.y);
+              ctx.lineTo(neighbor.dot.x, neighbor.dot.y);
+              ctx.strokeStyle = lineColor;
+              ctx.lineWidth = lineWidth;
+              ctx.stroke();
+          }
+
+          function Dot(x, y, radius, ctx) {
+              this.x = x;
+              this.y = y;
+              this.isHit = false;
+              this.radius = radius;
+              this.ctx = ctx;
+              this.drawMe();
+          }
+
+          Dot.prototype.drawMe = function() {
+              this.ctx.beginPath();
+              this.ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI, false);
+              this.ctx.fillStyle = '#222';
+              this.ctx.fill();
+          }
+
+          Dot.prototype.highlight = function() {
+              this.ctx.beginPath();
+              this.ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI, true);
+              this.ctx.fillStyle = hitPointColor;
+              this.ctx.fill();
+              this.ctx.closePath();
+          }
+
+          var isRetina = (window.devicePixelRatio > 1),
+              factor = 1;
+
+          if(isRetina) {
+              factor = 2;
+          }
+          function init() {
+              var i = j = 0;
+
+              canvas = document.getElementById('dots');
+              canvas.width = $(window).width()*factor;
+              canvas.height = $(window).height()*factor;
+              ctx = canvas.getContext('2d');
+              while(i * grid.gridElementDist < canvas.width) {
+                  for(j = 0; j*grid.gridElementDist < canvas.width;j++) {
+
+                      grid.add(i,j, new Dot(i*grid.gridElementDist*factor,j*grid.gridElementDist*factor,dotRadius*factor,ctx));
+                  }
+                  i++;
+              }
+          }
+
+          window.onresize=init;
+
+          function drawCanvas() {
+
+          }
+
+          var lastHit,
+              hit;
+
+          function handleMovement(eventX,eventY) {
+              var x = Math.round(eventX / grid.gridElementDist),
+                  y = Math.round(eventY / grid.gridElementDist);
+
+              //$( ".log" ).append( "<span>hit:(" + x + ", " + y + ")</span> | " );
+              // get corresponding dot
+              var dot = grid.get(x,y);
+
+              if(dot) {
+                  hit = new Hit(x,y, dot);
+                  if(lastHit) {
+                      if(hit.isNeighborOf(lastHit)) {
+                          hit.drawConnection(lastHit, ctx);
+                      }
+                      lastHit = hit;
+                  } else {
+                      lastHit = hit;
+                  }
+                  dot.highlight();
+              }
+          }
+          var touchHandler = function(event) {
+              // track touch move
+              var x = event.originalEvent.touches[0].pageX,
+                  y = event.originalEvent.touches[0].pageY;
+
+              handleMovement(x,y);
+          }
+
+          var mouseHandler = function(event) {
+              var x = event.pageX,
+                  y = event.pageY;
+
+              handleMovement(x,y);
+          }
+
+          $( "body" ).on('mousemove', mouseHandler);
+          $( "body" ).on('touchmove', touchHandler);
+
+          var lastHit,
+              currentHit;
+
+          function animloop(){
+              window.requestAnimationFrame(animloop);
+
+
+              drawCanvas();
+          };
+
+
+          init();
+          animloop();
+
+      </script>
       <script type="text/javascript">
           window.sr = ScrollReveal().reveal('.a-w-d', {duration: 1000, reset: true}, 100);
       </script>

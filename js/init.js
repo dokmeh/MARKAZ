@@ -37,6 +37,9 @@ $(document).ready(function() {
         swipeRight: function(){
         }
     });
+    $('.arrow-d').click(function () {
+        $(".home").animate({ scrollTop: $('section.home-body.blocks.members.cards').offset().top }, 1000);
+    })
 });
 var isMobile = {
     Android: function() {
